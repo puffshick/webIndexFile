@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background-color: #f0eade;
+}
+
+/*-----------SCROLLBAR*-----------*/
+    /* width */
+    ::-webkit-scrollbar {
+        width: 13px;
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #ffffff;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #b7b7b7;
+      }
+      /*-----------SCROLLBAR*-----------*/
+      
+@font-face {
+    font-family: ClassyVogueRegular;
+    src: url(fonts/ClassyVogueRegular.otf);
+}
+
+@font-face {
+    font-family: BetterGrade-519DV;
+    src: url(fonts/BetterGrade-519DV.ttf);
+}
+
+@font-face {
+    font-family: CellofyRegular-gx7q4;
+    src: url(fonts/CellofyRegular-gx7q4.otf);
+}
+
+@font-face {
+    font-family: Grimstica-nRKo0;
+    src: url(fonts/Grimstica-nRKo0.ttf);
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(40, 27, 12, 0.8), rgba(40, 27, 12, 0.5)), url("img/heroimagegif.gif");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border: none;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+
+  .topnav .login_signup a{
+    float: right;
+    color:rgba(255, 255, 255);
+  }
+
+  .topnav .login_signup a:hover{
+    float: right;
+    color:rgba(255, 255, 255);
+  }
+  
+  .topnav a:hover {
+    border-bottom: 3px solid red;
+  }
+  
+  .topnav a.active {
+    border-bottom: 3px solid red;
+  }
+
+  .card {
+    max-width: 300px;
+    margin-left: auto;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    margin-top: 180px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .card:hover{
+    transform: translate3D(0,-1px,0) scale(1.03);
+  }
+
+  .card a{
+    color: inherit;
+  }
+
+  .card p{
+    text-decoration: none;
+  }
+
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+
+  .column {
+    margin: auto;
+  }
+
+  .container {
+    padding: 25px;
+  }
+
+  .card img {
+    margin-top: -180px;
+  }
+
+  .AboutUs {
+    float: left;
+    margin: auto;
+  }
+
+  .label {
+    float: right;
+    margin-top: 75px;
+    margin-right: 5px;
+  }
+
+
+  /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgba(40, 27, 12); /* Not Black anymore muehuehue*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    border-radius: 15px;
+  }
+
+  .sidenav img{
+    border-style: ridge;
+    border-color: white;
+    border-radius: 50%;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-family: CellofyRegular-gx7q4;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #ffe987;
+    background-color: rgb(59, 46, 26);
+    border-radius: 15px;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .center_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+  }
